@@ -260,7 +260,7 @@ Los autómatas a pila son fundamentales en:
 ## 👨‍💻 Autor
 
 **Alejandro De Mendoza Tovar**
-- Estudiante de Ingeniería Informática
+- Ingeniería Informática
 - Fundación Universitaria Internacional de La Rioja (UNIR)
 - Bogotá D.C., Colombia
 
