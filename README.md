@@ -37,6 +37,24 @@ Este repositorio contiene la implementación completa de dos autómatas a pila (
 
 ---
 
+## Arquitectura
+
+```mermaid
+flowchart TD
+    A[automata1_XnY2n.jff] --> B[JFLAP 7.1 - simulacion]
+    C[automata2_X2nYn.jff] --> B
+    B --> D{Cadena de entrada}
+    D --> E[Leer X - apilar en pila]
+    E --> F{Simbolo actual = Y?}
+    F -->|Si| G[Desapilar - verificar proporcion n:2n]
+    G --> H{Pila vacia al final?}
+    H -->|Si| I[ACEPTAR cadena]
+    H -->|No| J[RECHAZAR cadena]
+    F -->|No| J
+    B --> K[L1 = X n Y 2n con n mayor 0]
+    B --> L[L2 = X 2n Y n con n mayor o igual 0]
+```
+
 ## 🛠️ Tecnologías y Herramientas
 
 - **JFLAP 7.1** - Java Formal Languages and Automata Package
@@ -322,20 +340,3 @@ Para preguntas, sugerencias o reportar problemas:
 Hecho con ❤️ y ☕ por Alejandro De Mendoza
 
 </div>
-## Arquitectura
-
-```mermaid
-flowchart TD
-    A[automata1_XnY2n.jff] --> B[JFLAP 7.1 - simulacion]
-    C[automata2_X2nYn.jff] --> B
-    B --> D{Cadena de entrada}
-    D --> E[Leer X - apilar en pila]
-    E --> F{Simbolo actual = Y?}
-    F -->|Si| G[Desapilar - verificar proporcion n:2n]
-    G --> H{Pila vacia al final?}
-    H -->|Si| I[ACEPTAR cadena]
-    H -->|No| J[RECHAZAR cadena]
-    F -->|No| J
-    B --> K[L1 = X n Y 2n con n mayor 0]
-    B --> L[L2 = X 2n Y n con n mayor o igual 0]
-```
