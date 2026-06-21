@@ -1,3 +1,5 @@
+<div align="center">
+
 # Autómata a Pila con JFLAP
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
@@ -5,6 +7,10 @@
 [![Java](https://img.shields.io/badge/Java-8%2B-orange.svg)](https://www.java.com/)
 
 ## 📋 Descripción del Proyecto
+
+</div>
+
+---
 
 Este repositorio contiene la implementación completa de dos autómatas a pila (PDA - Pushdown Automata) desarrollados como parte del **Laboratorio #2** de la asignatura **Teoría de Autómatas y Lenguajes Formales**. El proyecto demuestra el reconocimiento de lenguajes libres de contexto que requieren memoria auxiliar mediante estructuras de datos tipo pila.
 
